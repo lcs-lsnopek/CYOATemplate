@@ -36,6 +36,7 @@ struct NodeView: View {
                 Text(try! AttributedString(markdown: node.narrative,
                                            options: AttributedString.MarkdownParsingOptions(interpretedSyntax:
                                                 .inlineOnlyPreservingWhitespace)))
+                      Image(node.image ?? "")
             }
                 }
                 .onAppear {
